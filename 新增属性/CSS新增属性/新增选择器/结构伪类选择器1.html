@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类结构选择器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        div {
+            width: 750px;
+            height: 200px;
+            background: lightgreen;
+            margin: 0 auto;
+        }
+
+        div li {
+            float: left;
+            width: 180px;
+            height: 200px;
+            background: pink;
+            margin-right: 10px;
+        }
+
+        ul li:last-child {
+            margin-right: 0;
+        }
+
+        ul :first-child {
+            background: red;
+        }
+        li:nth-child(2)  {
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+</body>
+</html>

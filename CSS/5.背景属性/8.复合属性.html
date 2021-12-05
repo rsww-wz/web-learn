@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复合属性</title>
+    <style>
+        /*
+        background是复合属性，类似font也是复合属性一样
+        但是background没有顺序要求
+        约定俗成的顺序是：背景颜色，背景图片地址，背景平铺，背景滚动，背景图片位置
+        复合属性的可读性比较差
+         */
+        div {
+            width: 200px;
+            height: 200px;
+            background: lightblue url(img.png) no-repeat fixed center center;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/*
+选择器是table给整个表格加边框
+选择器是td给单元格加边框
+
+但是给单元格加边框，单元格之间的边框先不会重叠在一起，所以实际上是两条边框线
+属性：border-collapse:collapse 表示将两条边框线重合成一条边框线
+
+边框影响盒子的实际大小
+    无论是盒子的边框还是表格的边框都会影响实际大小
+    如果盒子200px,边框是10px,那么盒子的最终大小是220px
+    也就是边框会往外扩张，不会占用content的大小
+ */
+
+table th td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align:center;
+}

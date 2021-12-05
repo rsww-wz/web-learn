@@ -1,0 +1,33 @@
+/*
+我们需要元素模式的转换
+简单理解：一个模式的元素需要另外一个模式的特性
+比如：想要增加链接a标签的触发范围
+
+css语法
+    行内元素 --> 块级元素(重点)
+        display:block
+
+    块级元素 --> 行内元素
+        display:inline
+
+    转换为行内块元素(重点)
+        display:inline-block
+ */
+
+a {
+    display: block;
+    width: 200px;
+    height: 400px;
+    background: red;
+}
+
+div {
+    display: inline;
+    background: gray;
+}
+
+span {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+}

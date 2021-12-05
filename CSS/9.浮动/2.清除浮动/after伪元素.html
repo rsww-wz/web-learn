@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>after伪元素</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 400px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+
+        /*after伪元素*/
+        .clearfix:after {
+            content:"";
+            display:block;
+            height:0;
+            clear:both;
+            visibility:hidden;
+        }
+
+        .footer {
+            width: 600px;
+            height: 200px;
+            margin: 0 auto;
+            background: #000;
+        }
+
+        .box div {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+<div class="box clearfix">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <style>
+        .bar {
+            width: 150px;
+            height: 15px;
+            border: 1px solid red;
+            padding: 1px;
+            border-radius: 7px;
+        }
+
+        .bar-in {
+            width: 50%;
+            height: 100%;
+            background-color: red;
+            border-radius: 5px;
+            transition: width 0.2s;
+        }
+
+        .bar:hover .bar-in {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="bar">
+  <div class="bar-in"></div>
+</div>
+</body>
+</html>

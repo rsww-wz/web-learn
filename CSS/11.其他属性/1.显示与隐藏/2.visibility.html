@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>visibility</title>
+    <style>
+        /*
+        visibility :inherit visible collapse hidden
+            inherit  : 继承上一个父对象的可见性
+            visible  : 对象可视
+            collapse : 主要隐蔽表格的行或者列
+            hidden   : 隐藏对象
+                隐藏的对象还会占有标准流的位置，会保留位置
+         */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .peppa {
+            visibility: hidden;
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+
+        .george {
+            width: 200px;
+            height: 200px;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+<div class="peppa">佩奇</div>
+<div class="george">乔治</div>
+</body>
+</html>

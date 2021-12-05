@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行内块元素浮动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        span {
+            /*行内块元素无法设置高度和宽度，他们所占空间是根据内容自动扩展的，
+            但是设置浮动属性就会有行内块的特征，可以直接设置宽度和高度*/
+            /*float: left;*/
+            background-color: lightblue;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+<span>你好</span>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精确单位</title>
+  <style>
+      /*
+      background-position,如果参数值是精确坐标
+      那么第一个肯定是x坐标，第二个肯定是y坐标
+      如果只指定一个数值，那么该数值一定是x坐标，另一个默认垂直居中
+
+      混合使用坐标
+      如果一个是方位名词，一个是精确坐标，那么该第一个是x坐标，第二个y坐标
+       */
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        background-image: url(img.png);
+        background-repeat: no-repeat;
+
+        /*精确坐标*/
+        /*background-position: 20px 50px;*/
+
+        /*混合坐标*/
+        background-position: 20px bottom;
+
+
+    }
+  </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

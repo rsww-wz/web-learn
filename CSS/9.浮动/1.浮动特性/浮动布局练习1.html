@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动布局练习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /*去除列表的标准样式*/
+            list-style: none;
+            text-decoration: none;
+        }
+        .box {
+            width: 1226px;
+            height: 285px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+        
+        .item li {
+            float: left;
+            width: 296px;
+            height: 285px;
+            background-color: lightgreen;
+            margin-right: 14px;
+        }
+
+        /*最后一个li，不需要右边距，单独去掉
+        覆盖掉上面的属性，注意权重，*/
+        .box .last {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul class="item">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="last">4</li>
+    </ul>
+</div>
+</body>
+</html>

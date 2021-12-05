@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片位置</title>
+    <style>
+        /*
+        语法：background-position:x y
+        参数代表的意思是x坐标和y坐标，可是使用方位名字或者精确单位
+        length:百分数，由浮点数和单位标识符组成的长度值
+        position：top，center,bottom,left,right
+        如果指定的两个值都是方位名词，则两个值前后顺序无关
+        如果只有一个方位名词，第二个默认是居中对齐
+         */
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            background-image: url(img.png);
+            background-repeat: no-repeat;
+
+            /*两个都是方位词，顺序无关*/
+            /*background-position: center top;*/
+            /*background-position: top center;*/
+
+            /*省略一个值，第二个值默认居中对齐，把第一个值居中*/
+            /*background-position: top;*/
+            /*background-position: right;*/
+            /*background-position: center;*/
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

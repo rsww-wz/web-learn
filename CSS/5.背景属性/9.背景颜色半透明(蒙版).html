@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景颜色半透明</title>
+    <style>
+        /*
+        rgba(r,g,b,alpha)
+        alpha是透明度，范围值在0-1之前
+
+        背景半透明是指盒子背景半透明，盒子里面的内容不受影响
+        css3新增属性，是ie9+版本浏览器才支持
+        但是实际开发中，不太关注兼容性写法，所以可以放心使用
+         */
+        div {
+            height: 200px;
+            width: 200px;
+            background: rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

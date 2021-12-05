@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            width: 50px;
+            height: 20px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align:center;
+        }
+
+        /*tr td:nth-child(even) {*/
+        /*    background: blue;*/
+        /*}*/
+
+        /*tr td:nth-child(odd) {*/
+        /*    background: green;*/
+        /*}*/
+        
+        tr:nth-child(odd) td {
+            background: lightblue;
+        }
+
+        tr:nth-child(even) td {
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tbody>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

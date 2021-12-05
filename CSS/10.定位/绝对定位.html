@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: lightblue;
+        }
+
+        .box {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+
+        .father {
+            width: 600px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+            left: 150px;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div class="box"></div>
+<div></div>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/*
+边框的属性
+    颜色
+    宽度(粗细)
+    样式(线型)
+
+border-width
+    单位px
+
+border-style
+    hidden:没有边框，默认样式
+    dotted:点线
+    dashed:虚线
+    solid:实线
+    double:双线边框
+    groove:3D凹槽
+    ridge:菱形边框
+    inset:3D凹边
+    outset:3D凸边
+
+border-color
+
+边框分开写法
+    border是统一设置整个边框
+    如果要单独设置某条边框，用以下属性
+    border-top
+    border-right
+    border-left
+    border-bottom
+
+覆盖写法
+    如果四条边框的属性只有一个不一样，可以先统一设置
+    然后再单独设置不同要求的边框，覆盖上面不需要的属性即可
+
+复合属性
+    border:也是没有顺序要求的
+    但是一般都是根据：width,style,color的顺序
+
+
+ */
+
+div {
+    height: 200px;
+    width: 200px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>额外标签法</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 400px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+
+        .test {
+            width: 600px;
+            height: 200px;
+            background: #000;
+            margin: 0 auto;
+        }
+
+        .box div {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <h6 class="clear"></h6>
+</div>
+<div class="test"></div>
+</body>
+</html>

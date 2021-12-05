@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        input[type="password"] {
+            border: 2px dashed lightblue;
+        }
+
+        div[class^="icon"] {
+            float: left;
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            color: red;
+            background: lightgreen;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<form action="#">
+    账号
+    <input type="text" name="username" required="required" placeholder="请输入账号"><br>
+    密码
+    <input type="password" name="psw" required="required" placeholder="请输入密码" autofocus="autofocus"><br>
+    <input type="submit"><br><br>
+
+    <div class="icon1">小图标1</div>
+    <div class="icon2">小图标2</div>
+    <div class="icon3">小图标3</div>
+    <div class="icon4">小图标4</div>
+</form>
+</body>
+</html>

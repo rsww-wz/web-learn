@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单属性</title>
+    <style>
+        /*
+        可以通过以下设置方式修改placeholder里面的字体颜色
+         */
+        input::placeholder {
+            color:black;
+        }
+    </style>
+</head>
+<body>
+<!--
+required    表单拥有该属性表示其内容不能为空，必填
+placeholder 表单的提示信息，存在默认值将不显示
+autofocus   自动聚焦
+autocomplete当用户在字段开始键入，浏览器基于之前键入过的值，显示出字段中填写的选项(历史记录)
+multiple    可以多选文件提交
+-->
+<form action="#">
+    账号
+    <input type="text" name="username" required="required" placeholder="请输入账号"><br>
+    密码
+    <input type="password" name="psw" required="required" placeholder="请输入密码" autofocus="autofocus"><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>

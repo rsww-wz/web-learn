@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+    <style>
+        /*
+            显示与隐藏效果：鼠标经过导航栏会显示下拉菜单
+            本质：让一个元素在页面中显示或者隐藏起来
+
+            display:    显示隐藏
+                display:none
+                    隐藏元素，位置不再保留
+                    下面的标准流会占用隐藏元素的位置
+                display:block
+                    除了转换为块级元素之外，同时还有显示元素的意思
+
+           这个属性搭配js很有用
+         */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .peppa {
+            display: none;
+            /*display: block;*/
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+
+        .george {
+            width: 200px;
+            height: 200px;
+            background: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+<div class="peppa">佩奇</div>
+<div class="george">乔治</div>
+</body>
+</html>

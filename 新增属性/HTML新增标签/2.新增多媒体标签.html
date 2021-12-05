@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多媒体标签</title>
+    <style>
+        video {
+            width: 500px;
+            height: 500px;
+            margin: auto auto;
+        }
+    </style>
+</head>
+<body>
+<!--
+HTML新增标签
+    音频标签：audio
+        只支持三种格式：mp3，wav，ogg
+        属性
+            autopsy 如果出现该属性，音频在就绪后马上播放
+            controls 显示播放控件
+            loop     音频结束后重新开始播放
+            src      url
+    视频标签：video
+         只支持三种格式：mp4，webm，ogg
+         属性
+            autoplay=autoPlay 视频就绪自动播放
+            controls=controls 想用户显示播放控件
+            width：设置播放器宽度
+            height：设置播放器高度
+            loop=loop：播放完是否继续播放该视频
+            preload=auto/none 规定是否预加载视频
+            poster=imgurl：加载等待的画面图片
+            muted=muted：静音播放
+
+可以很方便的在页面插入音频或者视频而不是使用flash或者其他浏览器插件
+-->
+<audio src="E:\多媒体\音乐\酷狗\成龙、金喜善 - 美丽的神话.mp3" controls="controls"></audio>
+<video src="E:\多媒体\视频\AV\wKgBWl8ZarKAZwAUI9yh8BQkqLU084.mp4" controls="controls"></video>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/*
+圆角
+    border-radius 属性用于设置元素的外边框圆角
+    参数可以数值(px) 或者百分比的方式
+
+    如果要设置圆角为宽度和高度的一半:border-radius = 50%
+    如果是正方形，那么50%就刚好是一个圆
+
+    复合属性
+        左上角，右上角，右下角，左下角
+        从左上角开始顺时针设置圆角
+
+    分开写
+        border-top-left-radius
+        border-top-right-radius
+        border-bottom-right-radius
+        border-bottom-left-radius
+
+盒子阴影
+    box-shadow属性为盒子设置阴影
+    box-shadow : h-shadow v-shadow blur spread color inset
+    h-shadow:必须，水平阴影的位置，允许负值
+    v-shadow:必须，垂直阴影的位置，允许负值
+    blur:可选，模糊距离
+    spread:可选，阴影的尺寸0
+    color:可选，阴影的颜色
+    inset:可选，将外部阴影改为内部阴影，一般用rgba，设置透明度
+
+    默认是外阴影，但是不可以写这个单词，否则导致阴影无效
+    盒子阴影不占空间，不会响应其他盒子排列
+
+文字阴影
+    text-shadow属性为文字阴影效果
+    text-shadow : h-shadow v-shadow blur color
+    h-shadow:必须，水平阴影的位置，允许负值
+    v-shadow:必须，垂直阴影的位置，允许负值
+    blur:可选，模糊距离
+    color:可选，阴影的颜色
+ */

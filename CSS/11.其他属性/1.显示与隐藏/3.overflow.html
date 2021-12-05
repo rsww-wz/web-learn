@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow</title>
+    <style>
+        /*
+            属性指定了如果内容溢出一个元素的框（超过高度或者宽度），会发生什么
+            overflow:visible auto hidden scroll
+                visible: 不剪切内容也不添加滚动条，默认值
+                auto   : 没有溢出的时候不会有滚动条，溢出的时候会添加滚动条
+                hidden : 不显示超过对象尺寸的内容
+                scroll : 总是显示滚动条
+
+            注意：如果有定位的盒子，慎用hidden，因为他会隐藏多余的部分
+         */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>这些以字母打头的站子，有的是国内第一批二次元发源地，有国际上口耳相传的御宅基地，也有换了好几次域名最后杳无踪迹的尝试者，也有冉冉升起以新易旧的后来者居上</p>
+</div>
+</body>
+</html>

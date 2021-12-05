@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>语义标签</title>
+    <style>
+        header,
+        nav,
+        footer,
+        div {
+            width: 1200px;
+            height: 200px;
+            border-radius: 15px;
+            background: lightgreen;
+            margin: 10px auto;
+        }
+
+        div {
+            height: 300px;
+            background: #fff;
+        }
+
+        article,
+        aside {
+            float: left;
+            width: 500px;
+            height: 250px;
+            border-radius: 15px;
+            background: lightgreen;
+            margin: 10px 0;
+        }
+
+        article {
+            margin-right: 100px;
+        }
+
+        aside {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+<!--
+以前的盒子都是div标签来做的，但是div标签是没有语义的标签，所以HTML5新增以下标签
+这些标签和div标签一样，都是独占一行的，属于块级元素
+    header:头部标签
+    nav:导航标签
+    article:内容标签
+    section:定义文档某个区域
+    aside:侧边栏标题
+    footer:尾部标签
+
+注意
+    这些语义化标准注意是针对搜索引擎的
+    这些新标签在页面中可以多次使用
+    在ie9中，需要把这些元素转换为块级元素
+    其实，移动端更喜欢使用这些标签
+-->
+<header>header</header>
+<nav>nav</nav>
+<div>
+    <article>
+        <section>section</section>
+    </article>
+    <aside>aside</aside>
+</div>
+<footer>footer</footer>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>label标签</title>
+</head>
+<body>
+<!--
+使用场景
+    <label>标签用于绑定一个表单元素,当点击<label>标签内的文本时
+    浏览器就会自动将跳转焦点，选择对应的表单元素
+    比如选择的时候，不需要点到精确的点，点它的名称也可以选择或者定位到具体位置，
+    简单来说，就是增大选择范围，增加用户体验
+
+语法
+    一般必须和input标签搭配使用
+    label里面的for属性的值，必须和input里面的id属性的值相同（绑定）
+    for 翻译成为了，为谁设置这项功能
+-->
+<form action="">
+    <label for="username">账号</label>
+    <input type="text" id="username"><br>
+
+    性别
+    <input type="radio" name="gender" id="boy"> <label for="boy">男</label>
+    <input type="radio" name="gender" id="girl"><label for="girl">女</label><br>
+
+</form>
+</body>
+</html>

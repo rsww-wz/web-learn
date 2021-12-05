@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合并单元格</title>
+</head>
+<body>
+<!--
+合并单元格方式
+	跨行合并： rowspan="合并单元格的个数"
+	跨列合并： colspan="合并单元格的个数"
+
+目标单元格
+	跨行：最上侧单元格为目标单元格，写合并代码
+	跨列：最左侧单光格为目标单元格写合并代码
+
+合并单元格步骤
+	确定跨行还是跨列
+	确定目标单元格位置，写上合并方式=合并单元格的数量
+    删除多余的单元格
+
+注意
+    合并单元格的代码都是写在td标签上
+    合并完单元格之后会把其他单元格挤出去，所以需要删除多余单元格
+    删除单元格就是在源码中删除多个的格子
+-->
+
+<!--跨行合并单元格-->
+<table align="center" border="1" cellspacing="0"width="500" height="249">
+    <tbody>
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br><br>
+<!--跨列合并单元格-->
+<table align="center" border="1" cellspacing="0"width="500" height="249">
+    <tbody>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td rowspan="2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/*
+并集选择器可以选择多组标签，同时为他们定义相同的样式，通常用于集体声明
+理解：就是将多个选择器合并在一起,选择器的类型没有限制
+
+语法
+    任何形式的选择器都可以作为并集选择器的一部分
+    中间用逗号隔开
+    最后一个选择器不需要加逗号
+    每个标签换一行，比较符合规范
+ */
+
+a,
+p,
+span,
+li {
+    font-size: 20px;
+    color: black;
+}
+
+.content,
+#title,
+div a,
+span > li {
+    text-decoration: none;
+    font-size: 18px;
+    text-indent: 2em;
+}
+

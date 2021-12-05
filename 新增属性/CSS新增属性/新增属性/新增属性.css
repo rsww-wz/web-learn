@@ -1,0 +1,22 @@
+/*
+盒子模型
+box-sizing
+    content-box
+        content-box盒子大小为：width+padding+border(以前默认的)
+        padding,border都会撑大盒子，width是固定的
+
+    border-box
+        border-box盒子大小为width
+        padding,border都不会撑大盒子，盒子总大小是固定的
+
+图片模糊
+    filter：将模糊或颜色偏移等图形效果应用于元素
+        filter:函数()
+            例如：filter:blur(5px)
+            blur模糊处理，数值越大越模糊
+
+calc函数
+    作用：让你声明css属性值是执行一些计算
+    语法：width:calc(100%-80px)
+        可以做加减乘除运算
+ */

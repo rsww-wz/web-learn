@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片平铺</title>
+    <style>
+        /*
+        语法：background-repeat:repeat | no-repeat | repeat-x | repeat-y
+        默认值是repeat，即铺满整个盒子,如果图片没有盒子大，就重复图片
+        no-repeat：显示图片原来的大小
+        注意：背景图片会压住背景颜色
+         */
+        div {
+            width: 200px;
+            height: 200px;
+            background: lightblue;
+            background: url(./img.png);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>name属性</title>
+</head>
+<body>
+<!--
+    name：给元素起名称，区分不同的表单元素，名字会显示在控件上
+    name属性是input标签的，不是type的属性值
+    name是每个表单元素都应该有的属性值，主要是给后端使用的
+-->
+<form action="">
+    <!--配合name属性,而且是需要相同的name-->
+    性别
+    <input type="radio" name="gender" >男
+    <input type="radio" name="gender">女
+    <br>
+
+    <!--复选(多选)框也能配合name，而且name也必须是唯一的，以便后端数据处理-->
+    爱好
+    <input type="checkbox" name="hobby"> 睡觉
+    <input type="checkbox" name="hobby" > 看书
+    <input type="checkbox" name="hobby"> 运动
+    <input type="checkbox" name="hobby"> 社交
+    <br>
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片属性</title>
+</head>
+<body>
+<!--
+图像标签的其他属性
+    src     图片路径
+    alt     替换文本，图像不能显示的文字
+    title   提示文本，鼠标放在图像上，显示的文字
+    width   设置图片的宽度
+    height  设置图像的高度
+    border  设置图像的边框(废弃的属性:一般不会用HTML添加边框，一般是通过css设定的)
+
+    width,height : 一般只修改宽度或者高度，另外一个会自动等比例缩放，可以保证图片不会变形
+
+注意
+    图像的其他属性必须写在src属性的后面
+    其他属性之间是不分先后顺序的
+    属性之间用空格隔开
+    属性采用key=value的格式，属性=属性值
+-->
+<div><img src="./图片/城市.jpg" alt="图片不见了哦" title="城市" height="400px"></div>
+<div><img src="./图片/城市.jpg" alt="图片不见了哦" title="城市" width="100px"></div>
+<div><img src="./图片/城市.jpg" alt="图片不见了哦" title="城市" width="200px" height="200px"></div>
+<div><img src="./图片/城市.jpg" alt="图片不见了哦" title="城市" width="100px" border="10px"></div>
+</body>
+</html>

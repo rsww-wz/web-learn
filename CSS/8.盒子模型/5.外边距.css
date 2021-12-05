@@ -1,0 +1,36 @@
+/*
+外边距定义
+    盒子与盒子间的距离
+
+属性
+    margin-left
+    margin-right
+    margin-top
+    margin-bottom
+
+复合属性
+    和padding一样，也是上左下右
+
+外边距应用
+    外边距可以让块级盒子水平居中
+        但是必须指定width
+        左右外边距都设置成auto
+
+    写法
+        margin-left:auto
+        margin-right:auto
+
+        margin:auto
+
+        margin:0 auto
+
+    注意
+        以上方法是让块级元素水平居中
+        行内元素或者行内块元素水平居中给器父元素添加text-align:center即可
+
+浏览器默认样式
+    网页元素很多都带有默认的内外边距，而且不同浏览器默认的也不一致，因此在布局前，首先要清楚网页的默认样式
+    margin会有浏览器的默认样式
+    即使没有设置margin，盒子里屏幕也会有一定距离
+    可以通过通配符选择器去除掉浏览器默认样式
+ */
